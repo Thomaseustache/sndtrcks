@@ -1,0 +1,114 @@
+/* CSS */
+body{
+	background: #000;
+	color: #fff;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+.wrapper{
+	max-with:1000px;
+	width: 100%;
+	margin: auto;
+}
+.player-group{
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+.player-group h2 {
+	text-transform: uppercase;
+}
+.player-group h2 span{
+	display: block; 
+}
+
+.player-thumb {
+	max-width: 300px;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 18px;
+	overflow: hidden;
+	background: no-repeat 50% 50%;
+	background-size: cover;
+}
+.player-thumb:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.player-thumb img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.post {
+	position: relative;
+	z-index: 5;
+}
+.bg-player {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: .1;
+	background: no-repeat 50% 50%;
+	background-size: cover;
+	filter: blur(80px);
+}
+.controls{
+	text-align: center;
+}
+
+#player-yt{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	left: -999px;
+	width: 0;
+	height: 0;
+
+}
+/* WORDPRESS CSS */
+
+/* Balises block */
+
+.post-content h1{ }
+.post-content h2{ }
+.post-content h3{ }
+.post-content h4{ }
+.post-content h5{ }
+.post-content h6{ }
+.post-content p{ }
+.post-content ul{ }
+.post-content ol{ }
+.post-content blockquote{ }
+.post-content pre{ }
+.post-content address{ }
+.post-content address{ }
+
+/* Balises inline */
+
+.post-content strong{ }
+.post-content em{ }
+.post-content acronym{ }
+.post-content code{ }
+.post-content del{ }
+.post-content ins{ }
+
+/* Classes des images */
+
+.alignleft{ display: inline; float: left;}
+.aligncenter{ clear: both; display: block; margin-left: auto; margin-right: auto;}
+.alignright{ display: inline; float: right;}
+.size-auto{ }
+.size-medium{ }
+.size-large{ }
+.size-full{ }
+.wp-caption{ }
+.wp-caption img{ }
+.gallery{ }
+.gallery .gallery-item{ }
+
+
