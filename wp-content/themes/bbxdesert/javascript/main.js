@@ -19,7 +19,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 btn_next.addEventListener('click', function () {
   yt.NextVideo();
 });
-<<<<<<< Updated upstream
 
 btn_prev.addEventListener('click', function () {
   yt.PrevVideo();
@@ -49,54 +48,7 @@ function onPlayerStateChange(event) {
     done = true;
   }
 }
-// class décrivant le comportement du player audio
-var Youtube = function()
-{
-  this.player = new YT.Player('player-yt', {
-    height: '360',
-    width: '640',
-    videoId: videos[indexVideo].dataset.yid,
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
 
-  // Initialisation du composant player Youtube et de ses états
-  this.state = {
-    playerState: false // Etat du player (par défaut, sur pause)
-  };
-
-=======
-
-btn_prev.addEventListener('click', function () {
-  yt.PrevVideo();
-});
-
-// Event Listener, click sur bouton play --> mettre play ou pause
-btn_play.addEventListener('click', function() {
-  yt.PlayPause();
-});
-
-btn_stop.addEventListener('click', function() {
-  yt.StopPlayer();
-});
-
-document.addEventListener('keypress', function(event) {
-  if (event.keyCode == 32) { // Play/pause sur keypress bar espace
-    yt.PlayPause();
-  }
-});
-
-function onYouTubeIframeAPIReady() {
-  yt = new Youtube();
-}
-
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    done = true;
-  }
-}
 // class décrivant le comportement du player audio
 var Youtube = function()
 {
@@ -111,7 +63,6 @@ var Youtube = function()
     playerState: false // Etat du player (par défaut, sur pause)
   };
 
->>>>>>> Stashed changes
   // permet le changement d'état d'une propriété du player
   this.setState = function(stateName, state) {
     this.state[stateName] = state;
