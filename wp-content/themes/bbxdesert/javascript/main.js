@@ -48,7 +48,6 @@ function onPlayerStateChange(event) {
     done = true;
   }
 }
-
 // class décrivant le comportement du player audio
 var Youtube = function()
 {
@@ -107,6 +106,7 @@ var Youtube = function()
   this.ChangeVideo = function()
   {
     this.player.loadVideoById(videos[indexVideo].dataset.yid);
+    this.setState('playerState', true); // Etat en cours
     // this.StopPlayer(); Pour stoper la video au changement
   };
 };
